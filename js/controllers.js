@@ -7,7 +7,6 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 	$scope.title = '';
 
 	$scope.loadPage = function(){
-		//$log.log($routeParams);
 
 		$scope.title = $routeParams.page;
 
@@ -15,7 +14,7 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 			$scope.title = 'home';
 		}
 
-		return '../views/pages/'+$scope.title+'.html';
+		return 'views/pages/'+$scope.title+'.html';
 		//$scope.$apply();
 	}
 	
